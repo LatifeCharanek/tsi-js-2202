@@ -34,4 +34,3 @@ sessionStorage.setItem("frutas", JSON.stringify(vetor));
 let recuperaDado = JSON.parse(sessionStorage.getItem("frutas"));
 
 console.log(recuperaDado);
-// AULA07/10
