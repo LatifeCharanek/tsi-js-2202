@@ -15,6 +15,8 @@ function carregaMonitoresDeEventos(){
     btnAddTarefa.addEventListener('click', adicioneTarefa);
 
     listaDeTarefas.addEventListener('click', apagarTarefa)
+
+    btnLimpaTudo.addEventListener('click', apagarTudo)
     }
 
 carregaMonitoresDeEventos();
@@ -41,7 +43,8 @@ function adicioneTarefa(evento){
 
         alert('Entre com uma tarefa');
 
-    }
+    }else {
+
 
     //Cria li com a nova tarefa
 
@@ -75,4 +78,12 @@ function adicioneTarefa(evento){
 
 
     //apaga o input para entrada
+}}
+
+function apagarTudo (evento){
+    evento.preventDefault();
+
+    listaDeTarefas.innerHTML = ''; 
+
 }
+
