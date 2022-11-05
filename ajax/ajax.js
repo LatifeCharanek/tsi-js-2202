@@ -14,8 +14,6 @@ function recuperaConteudoAjax(){
 
             document.querySelector('#dadoRecuperado').innerHTML
                 = this.responseText;
-
-
         }
     }
 
